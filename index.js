@@ -22,18 +22,18 @@
         'Lime'
     ];
     //Selects element passed in
-    function selectElement(selector){
+    function selectIndex(selector){
         return document.querySelector(selector)
     }
     // Clears the content inside of the search-results div
     function clearResults(){
-        selectElement('.search-results').innerHTML = "";
+        selectIndex('.search-results').innerHTML = "";
     }
 
 
 
     function getResults(){
-        const search = selectElement('.searchBar').value;
+        const search = selectIndex('.searchBar').value;
 
         clearResults();
 
@@ -45,15 +45,15 @@
             if(
                 colors[i].toLocaleLowerCase().includes(search.toLocaleLowerCase())
             ){
-                selectElement('.search-results').innerHTML += `
+                selectIndex('.search-results').innerHTML += `
                     <div class ="search-results-item" style="background-color:${colors[i]};">
                         <span class = 'search-item' >${colors[i]}</span>
                     </div>
                 
                 `;
 
-            } console.log(selectElement('.search-results').innerHTML)
+            } console.log(selectIndex('.search-results').innerHTML)
         }
     }
 
-    selectElement('.searchBar').addEventListener('keyup', getResults);
+    selectIndex('.searchBar').addEventListener('keyup', getResults);
