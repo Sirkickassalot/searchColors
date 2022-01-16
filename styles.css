@@ -1,5 +1,6 @@
 body {
     display: flex;
+    background-color: black;
 }
 
 .searchBar {
@@ -18,74 +19,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 360px;
+    -webkit-animation: fadein 2s;
 }
 
-.circle_1 {
-    height: 50px;
-    width: 50px;
-    background-color: rgb(34, 250, 6);
-    border-radius: 50%;
-  }
-  
-  .circle_2{
-    height: 50px;
-    width: 50px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 50%;
-  }
-  
-  .circle_3 {
-    height: 50px;
-    width: 50px;
-    background-color: rgb(252, 8, 170);
-    border-radius: 50%;
-  }
-  
-  .circle_4 {
-    height: 50px;
-    width: 50px;
-    background-color: rgb(34, 250, 6);
-    border-radius: 50%;
-  }
-  
-  .circle_5{
-    height: 50px;
-    width: 50px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 50%;
-  }
-  
-  .circle_6 {
-    height: 50px;
-    width: 50px;
-    background-color: rgb(252, 8, 170);
-    border-radius: 50%;
-  }
-  .circle_7 {
-    height: 50px;
-    width: 50px;
-    background-color: rgb(34, 250, 6);
-    border-radius: 50%;
-  }
-  
-  .circle_8{
-    height: 50px;
-    width: 50px;
-    background-color: rgb(0, 0, 0);
-    border-radius: 50%;
-  }
-  
-  .circle_9 {
-    height: 50px;
-    width: 50px;
-    background-color: rgb(252, 8, 170);
-    border-radius: 50%;
-  }
-  
-  .circle_10 {
-    height: 50px;
-    width: 50px;
-    background-color: rgb(34, 250, 6);
-    border-radius: 50%;
-  }
-  
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

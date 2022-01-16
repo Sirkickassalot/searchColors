@@ -1,15 +1,25 @@
 
     let colors = [ 
         'Pink', 
-        'Black', 
+        'Cyan', 
         'Green', 
         'Red', 
+        'White',
         'Yellow', 
         'Orange', 
         'Blue',
         'Brown',
         'Purple',
-        'Cyan'
+        'Grey',
+        'Magenta',
+        'Navy',
+        'Teal',
+        'Lavender',
+        'Maroon',
+        'Beige',
+        'Olive',
+        'Coral',
+        'Lime'
     ];
     //Selects element passed in
     function selectElement(selector){
